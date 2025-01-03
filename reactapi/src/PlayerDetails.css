@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th,
+  td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+ /* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+  .container {
+    width: 90%; /* Adjust container width */
+    margin: 20px auto; /* Reduce the top margin */
+    padding: 25px; /* Increase padding */
+    min-height: 500px; /* Increase minimum height */
+  }
+
+  table {
+    font-size: 0.9rem; /* Reduce table font size */
+  }
+
+  th,
+  td {
+    padding: 8px; /* Reduce padding */
+  }
+
+  th {
+    font-size: 0.95rem; /* Slightly reduce header font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%; /* Occupy more space on smaller screens */
+    padding: 30px; /* Add more padding for content spacing */
+    min-height: 600px; /* Further increase height for better appearance */
+  }
+
+  table {
+    display: block; /* Make the table scrollable */
+    overflow-x: auto;
+    white-space: nowrap; /* Prevent wrapping for narrow screens */
+  }
+
+  th,
+  td {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Reduce header font size */
+  }
+}

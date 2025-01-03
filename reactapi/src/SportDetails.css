@@ -1,0 +1,99 @@
+.sport-details {
+    display: flex; /* Use flexbox to align image and content side by side */
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Center the content horizontally */
+    gap: 30px; /* Add some space between the image and the content */
+    padding: 20px; /* Add padding around the whole section */
+  }
+  
+  .sport-image {
+    flex: 1; /* Take up the majority of space */
+    max-width: 60%; /* Limit the image width */
+    min-width: 200px; /* Minimum width for the image */
+    position: relative; /* For absolute positioning if needed */
+  }
+  
+  .sport-image img {
+    width: 100%; /* Make the image cover the available space */
+    height: 100%; /* Ensure the image height covers the container */
+    object-fit: cover; /* Ensures the image covers the entire space without stretching */
+    border-radius: 8px; /* Optional: Round corners of the image */
+  }
+  
+  .sport-info {
+    flex: 1; /* Allow the text to take up remaining space */
+    max-width: 40%; /* Limit the content width */
+    padding: 20px; /* Add padding inside the content area */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Optional: Round corners for the content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for the content box */
+  }
+  
+  
+  
+.sport-info p {
+    display: flex;
+    justify-content: space-between; /* Align items with space between */
+    font-size: 1.1rem;
+    margin: 8px 0;
+    padding: 5px;
+  }
+  
+  .sport-info p span {
+    flex: 1; /* Make sure the label part takes up the space before the value */
+    font-weight: bold;
+    text-align: center; /* Ensure the label is aligned to the left */
+  }
+  
+  .sport-info p span.value {
+    text-align: left;/* Align the value to the right */
+    font-weight: normal;
+  }
+  
+  .sport-info .description {
+    font-size: 1rem;
+    font-style: italic;
+    margin-top: 15px;
+  }
+  
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    .sport-details {
+      flex-direction: column; /* Stack details and button vertically */
+      align-items: flex-start; /* Align content to the left */
+      gap: 10px; /* Reduce gap between elements */
+    }
+  
+    .sport-image {
+      display: none; /* Hide the image on small screens */
+    }
+  
+    .sport-info {
+      width: 100%; /* Make the details take full width */
+      max-width: none; /* Remove width restrictions */
+      padding: 10px; /* Adjust padding */
+    }
+  
+    .back-button {
+      display: block; /* Make the button visible on small screens */
+      width: 100%; /* Center the button below the details */
+      text-align: center;
+    }
+  }
+  
+  /* Adjustments for Very Small Screens */
+  @media (max-width: 480px) {
+    .sport-info {
+      font-size: 0.9rem; /* Reduce font size for very small screens */
+      padding: 8px; /* Further adjust padding */
+    }
+  
+    .sport-info .description {
+      font-size: 0.85rem; /* Adjust description font size */
+    }
+  
+    .back-button {
+      font-size: 0.9rem; /* Adjust button font size */
+      padding: 8px 15px; /* Reduce button padding */
+    }
+  }

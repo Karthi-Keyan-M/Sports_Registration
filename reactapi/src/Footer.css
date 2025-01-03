@@ -1,0 +1,33 @@
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-info, .footer-links, .contact-info, .social-media {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a, .social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .footer-links a:hover, .social-media a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-media a {
+    font-weight: bold;
+  }
+  
+  .footer-developer {
+    font-size: 0.9em;
+    color: #bbb;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
